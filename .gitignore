@@ -1,0 +1,22 @@
+# SCAS
+scas-mobile/node_modules/
+scas-mobile/.expo/
+scas-mobile/dist/
+scas-mobile/web-build/
+scas-mobile/expo-env.d.ts
+scas-mobile/ios/
+scas-mobile/android/
+scas-mobile/.kotlin/
+scas-mobile/*.tsbuildinfo
+**/npm-debug.*
+**/.DS_Store
+*.pem
+.env
+.env.*
+!.env.example
+backups/*.sql
+backups/*.zip
+backups/*.gz
+*.log
+.cursor/
+agent-transcripts/

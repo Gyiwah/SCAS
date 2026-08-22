@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "SCAS Attendance",
+    "slug": "scas-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "gh.edu.uew.scas",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SCAS uses the camera only to read the QR code displayed for your class, so your attendance can be recorded."
+      }
+    },
+    "android": {
+      "package": "gh.edu.uew.scas",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F6E4F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": ["android.permission.CAMERA"],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SCAS uses the camera only to read the QR code displayed for your class, so your attendance can be recorded.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ]
+  }
+}
